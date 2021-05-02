@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+  }
+}

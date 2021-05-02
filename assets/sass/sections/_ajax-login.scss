@@ -1,0 +1,40 @@
+.ajax-form {
+
+  &.ajax,
+  &.successful {
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+
+  &__message {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+
+  &--forgot {
+
+    &.successful {
+      .ajax-form__field,
+      input[type="submit"] {
+        max-height: 0;
+        opacity: 0;
+      }
+    }
+
+    input[type="submit"] {
+      height: 48px;
+    }
+
+    .login-forgot__message {
+      &.login-forgot__form__message--visible {
+        height: 50px;
+      }
+    }
+  }
+}

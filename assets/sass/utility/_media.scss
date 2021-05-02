@@ -1,0 +1,41 @@
+.video-wrapper {
+  @include ratio(16, 9);
+  
+  > * {
+    @include absolute;
+  }
+}
+
+.is-draggable {
+  cursor: grab;
+}
+.is-dragging {
+  cursor: grabbing;
+}
+
+.object-fit {
+  display: block;
+  object-fit: cover;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    opacity: 0 !important;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .object-fit-parent & {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+}
+
+.object-fit-parent {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+figure {
+  margin: 0;
+}

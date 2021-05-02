@@ -1,0 +1,16 @@
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 100%;
+  transition:
+    color .15s ease,
+    border-color .15s ease,
+    background-color .15s ease;
+
+  // Hide empty buttons.
+  &:not(input[type='submit']):empty {
+    display: none;
+  }
+}

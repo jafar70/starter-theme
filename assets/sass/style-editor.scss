@@ -1,0 +1,89 @@
+/**
+ * Custom Gutenberg editor styles
+ * Stylesheet for small editor CSS updates.
+ */
+
+/*--------------------------------------------------------------
+# Core styles
+--------------------------------------------------------------*/
+@import 'variables';
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@import 'mixins';
+
+/*--------------------------------------------------------------
+# Element resets
+--------------------------------------------------------------*/
+@import 'reset/base';
+@import 'reset/links';
+@import 'reset/tables';
+@import 'reset/text'; 
+
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+@import 'defaults/defaults';
+
+/*--------------------------------------------------------------
+# Utility
+--------------------------------------------------------------*/
+@import 'utility/utility';
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+@import 'sections/sections';
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import 'components/components';
+
+/*--------------------------------------------------------------
+# Gutenberg
+--------------------------------------------------------------*/
+@import 'gutenberg/gutenberg';
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import 'modules/modules';
+
+/*--------------------------------------------------------------
+# Template parts
+--------------------------------------------------------------*/
+@import 'template-parts/template-parts';
+
+// Prevents WYSIWYG's from having no editor padding.
+body {
+  margin: 8px;
+}
+
+// Makes ACF modules full width in editor.
+.wp-block {
+  max-width: 624px;
+}
+
+[data-type^='acf'],
+[data-type^='core/group'] {
+  max-width: none;
+}
+
+[data-type^='acf'] a {
+  pointer-events: none;
+}
+
+.gform_wrapper ul.gform_fields {
+  display: block;
+  margin: 0;
+}
+
+.break-out {
+  left: auto !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+

@@ -1,0 +1,15 @@
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+
+  &[src$='.png'] {
+    backface-visibility: hidden;
+  }
+}
+
+figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+}

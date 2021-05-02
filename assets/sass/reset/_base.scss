@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;  
+  }
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.8;
+  position: relative;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
