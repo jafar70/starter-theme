@@ -146,7 +146,7 @@ function jafar_theme_scripts() {
 	wp_enqueue_style( 'jafar-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'jafar-theme-style', 'rtl', 'replace' );
 
-	$script_dependancies = [ 'jquery' ];
+	$script_dependancies = array( 'jquery' );
 
 	if ( $google_maps_key = get_field( 'google_maps_key', 'global_options' ) ) { // phpcs:ignore
 		wp_register_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=' . $google_maps_key, [ 'jquery' ], true ); // phpcs:ignore
@@ -211,6 +211,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 require get_template_directory() . '/inc/acf-blocks.php';
 
 /**
- * ACF Blocks.
+ * Block API Access.
  */
 require get_template_directory() . '/inc/block-api.php';
